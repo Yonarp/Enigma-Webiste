@@ -1,0 +1,87 @@
+.button-ghost-white {
+    position: relative;
+    border: 1px solid $white;
+    overflow: hidden;
+    width: 100px;
+    padding: 25px 40px;
+    text-align: center;
+    color: $white;
+    font-family: Roboto;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: all .2s;
+    &:hover {
+        color: $backgroud-black-2;
+        &::before {
+            animation: button-fill 1s 1;
+            top: 0;
+            left: 0;
+        }
+    }
+    &::before {
+        overflow: hidden;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: $white;
+        left: 0;
+        top: 100%;
+        display: inline-block;
+        z-index: -1;
+    }
+}
+
+.button-ghost-white-round {
+    position: relative;
+    border-radius: 100px;
+    overflow: hidden;
+    width: 5px;
+    padding: 25px 40px;
+    text-align: center;
+    color: $white;
+    font-family: Roboto;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 50px;
+    margin-top: 30px;
+    transition: all .2s;
+}
+
+.button-ghost-black {
+    position: relative;
+    border: 1px solid $backgroud-black;
+    overflow: hidden;
+    width: 100px;
+    padding: 25px 40px;
+    text-align: center;
+    text-decoration: none;
+    color: $backgroud-black;
+    font-family: Roboto;
+    display: inline-block;
+    margin-top: 30px;
+    transition: all .2s;
+    z-index: 2;
+    &:hover {
+        color: $white;
+        z-index: 2;
+        &::before {
+            animation: button-fill 1s 1;
+            top: 0;
+            left: 0;
+        }
+    }
+    &::before {
+        overflow: hidden;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $backgroud-black-2;
+        left: 0;
+        top: 100%;
+        display: inline-block;
+        z-index: -1;
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EACd,UAAU,EAAE,IAAI;CACnB;;AAED,AAAA,kBAAkB,CAAC;EACf,UAAU,EAAE,IAAI;CACnB;;AAED,AAAA,iBAAiB,CAAC;EACd,UAAU,EAAE,IAAI;CACnB",
+    "sources": [
+        "margin.scss"
+    ],
+    "names": [],
+    "file": "margin.css"
+}
