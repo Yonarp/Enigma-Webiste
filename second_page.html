@@ -9,6 +9,7 @@
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contactform.css">
 
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
@@ -200,6 +201,7 @@
         </div>
     </div>
 
+
     </div>
     <div class="container"></div>
     <div class="container"></div>
@@ -242,6 +244,36 @@
             </div>
         </li>
     </ul>
+
+    <div class="container">
+        <div class="container_contact">
+            <form accept-charset="UTF-8" action="https://usebasin.com/f/6b1e852790b2
+            " method="POST">
+          
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name.." required>
+          
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email.." required>
+
+              <label for="regno">MAHE Registration Number</label>
+              <input type="text" id="regno" name="regno" placeholder="Your registration no.." required>
+          
+          
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="recruit">I want to join Enigma</option>
+                <option value="bug">I want to report a bug</option>
+                <option value="other">Other</option>
+              </select>
+          
+              <label for="textarea">Description</label>
+              <textarea id="description" name="description" placeholder="Write something.." style="height:200px"></textarea>          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+    </div>
 
 
 </body>
