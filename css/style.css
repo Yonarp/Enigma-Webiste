@@ -649,7 +649,9 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: #121212; }
+  background: #121212;
+  overflow: hidden;
+}
 
 .E img {
   position: absolute;
