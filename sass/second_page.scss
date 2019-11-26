@@ -1,0 +1,498 @@
+    .container-white {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        color: $white;
+        text-align: center;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    }
+    
+    h2 {
+        font-family: "Roboto";
+        color: $text-color-white;
+    }
+    
+    .margins {
+        margin-top: 100px;
+    }
+    
+    .fakeButtons {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        position: relative;
+        top: 6px;
+        left: -146px;
+        background-color: #ff3b47;
+        border-color: #9d252b;
+        display: inline-block;
+    }
+    
+    .fakeMinimize {
+        left: -143px;
+        background-color: #ffc100;
+        border-color: #9d802c;
+    }
+    
+    .fakeZoom {
+        left: -140px;
+        background-color: #00d742;
+        border-color: #049931;
+    }
+    
+    .fakeMenu {
+        width: 350px;
+        box-sizing: border-box;
+        height: 25px;
+        background-color: #bbb;
+        margin: 0 auto;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+    
+    .fakeScreen {
+        background-color: #151515;
+        box-sizing: border-box;
+        width: 350px;
+        margin: 0 auto;
+        padding: 20px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    
+    .fakeScreen p {
+        position: relative;
+        left: 50%;
+        margin-left: -8.5em;
+        text-align: left;
+        font-size: 1.25em;
+        font-family: monospace;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0;
+    }
+    
+    span {
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    .line1 {
+        color: #9CD9F0;
+        -webkit-animation: type .5s 1s steps(20, end) forwards;
+        -moz-animation: type .5s 1s steps(20, end) forwards;
+        -o-animation: type .5s 1s steps(20, end) forwards;
+        animation: type .5s 1s steps(20, end) forwards;
+    }
+    
+    .cursor1 {
+        -webkit-animation: blink 1s 2s 2 forwards;
+        -moz-animation: blink 1s 2s 2 forwards;
+        -o-animation: blink 1s 2s 2 forwards;
+        animation: blink 1s 2s 2 forwards;
+    }
+    
+    .line2 {
+        color: #CDEE69;
+        -webkit-animation: type .5s 4.25s steps(20, end) forwards;
+        -moz-animation: type .5s 4.25s steps(20, end) forwards;
+        -o-animation: type .5s 4.25s steps(20, end) forwards;
+        animation: type .5s 4.25s steps(20, end) forwards;
+    }
+    
+    .cursor2 {
+        -webkit-animation: blink 1s 5.25s 2 forwards;
+        -moz-animation: blink 1s 5.25s 2 forwards;
+        -o-animation: blink 1s 5.25s 2 forwards;
+        animation: blink 1s 5.25s 2 forwards;
+    }
+    
+    .line3 {
+        color: #E09690;
+        -webkit-animation: type .5s 7.5s steps(20, end) forwards;
+        -moz-animation: type .5s 7.5s steps(20, end) forwards;
+        -o-animation: type .5s 7.5s steps(20, end) forwards;
+        animation: type .5s 7.5s steps(20, end) forwards;
+    }
+    
+    .cursor3 {
+        -webkit-animation: blink 1s 8.5s 2 forwards;
+        -moz-animation: blink 1s 8.5s 2 forwards;
+        -o-animation: blink 1s 8.5s 2 forwards;
+        animation: blink 1s 8.5s 2 forwards;
+    }
+    
+    .line4 {
+        color: #fff;
+        -webkit-animation: type .5s 10.75s steps(20, end) forwards;
+        -moz-animation: type .5s 10.75s steps(20, end) forwards;
+        -o-animation: type .5s 10.75s steps(20, end) forwards;
+        animation: type .5s 10.75s steps(20, end) forwards;
+    }
+    
+    .cursor4 {
+        -webkit-animation: blink 1s 11.5s infinite;
+        -moz-animation: blink 1s 8.5s infinite;
+        -o-animation: blink 1s 8.5s infinite;
+        animation: blink 1s 8.5s infinite;
+    }
+    
+    .scroll-down {
+        position: absolute;
+        top: 200%;
+        left: 50%;
+        bottom: 10px;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        z-index: 100;
+        text-decoration: none;
+        text-shadow: 0;
+        width: 13px;
+        height: 13px;
+        border-bottom: 2px solid #fff;
+        border-right: 2px solid #fff;
+        z-index: 9;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0%) rotate(45deg);
+        -moz-transform: translate(-50%, 0%) rotate(45deg);
+        transform: translate(-50%, 0%) rotate(45deg);
+        -webkit-animation: fade_move_down 4s ease-in-out infinite;
+        -moz-animation: fade_move_down 4s ease-in-out infinite;
+        animation: fade_move_down 4s ease-in-out infinite;
+    }
+    
+    @keyframes type {
+        to {
+            width: 17em;
+        }
+    }
+    
+    .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .header-black {
+        color: $text-color-white;
+        font-family: "Roboto";
+        font-weight: 300;
+        font-style: bold;
+        font-size: 68px;
+        text-transform: capitalize;
+        margin-bottom: 50px;
+    }
+    
+    .container {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        &-light {
+            background: $backgroud-black;
+        }
+    }
+    
+    .container-light {
+        background: $backgroud-black;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+    
+    .desc {
+        margin-top: 100px;
+        color: $text-color-peach;
+    }
+    
+    .desc-section-1 {
+        position: absolute;
+        top: 40%;
+        width: 49.5%;
+        margin-left: 30px;
+    }
+    
+    .desc-header {
+        font-weight: 300;
+        font-size: 50px;
+        position: relative;
+        transform-origin: left;
+        transform: scaleX(1);
+        color: $text-color-white;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 10px;
+        transition: 0.5s;
+    }
+    
+    .desc-text {
+        text-align: center;
+        margin: 60px 15px;
+        font-size: 18px;
+        color: $text-color-white;
+    }
+    
+    .Our-goal {
+        margin-top: 150px;
+        &-text {
+            margin-left: 30px;
+            color: $text-color-white;
+            font-size: 20px;
+            letter-spacing: 3px;
+        }
+    }
+    
+    .perspective {
+        position: absolute;
+        color: $text-color-white;
+        font-size: 65px;
+        left: 65%;
+        top: 40%;
+        text-transform: uppercase;
+        letter-spacing: -2px;
+        transition: all .2s ease-in-out;
+        &-text {
+            height: 50px;
+            position: relative;
+            overflow: hidden;
+            transition: all .5s ease-in-out;
+            & p {
+                line-height: 50px;
+                height: 50px;
+                margin: 0;
+                transition: all .5s ease-in-out;
+            }
+            &:nth-child(odd) {
+                transform: skew(60deg, -30deg) scaleY(0.667);
+            }
+            &:nth-child(even) {
+                transform: skewY(-30deg) scaleY(1.337);
+            }
+            &:nth-child(1) {
+                left: 29px;
+            }
+            &:nth-child(2) {
+                left: 58px;
+            }
+            &:nth-child(3) {
+                left: 87px;
+            }
+            &:nth-child(4) {
+                left: 116px;
+            }
+            &:nth-child(5) {
+                left: 145px;
+            }
+        }
+        &:hover p {
+            transform: translate(0, -50px);
+        }
+    }
+    
+    .lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        margin: auto;
+        width: 90vw;
+    }
+    
+    .line {
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 15vh;
+            width: 100%;
+            top: -50%;
+            left: 0;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+            animation: run 7s 0s infinite;
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+        }
+        &:nth-child(1) {
+            margin-left: -25%;
+        }
+        &::after {
+            animation-delay: 2s;
+        }
+        &:nth-child(3) {
+            margin-left: 25%;
+            &::after {
+                animation-delay: 2.5s;
+            }
+        }
+    }
+    
+    @keyframes run {
+        0% {
+            top: -50%;
+        }
+        100% {
+            top: 110%
+        }
+    }
+    
+    .dept {
+        &-header {
+            font-size: 68px;
+            color: $text-color-white;
+            text-align: center;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+        &-text-1 {
+            text-align: center;
+            font-size: 25px;
+            margin-top: 30px;
+        }
+        &-software {
+            text-align: center;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            margin: 50px;
+            font-size: 50px;
+        }
+    }
+    
+    .card {
+        align-content: center;
+        margin-left: 250px;
+        transition: all 0.5s ease-in-out;
+        &:hover .face.face-1 .content {
+            opacity: 1;
+            color: $backgroud-black;
+        }
+        &:hover .face.face-1 {
+            background: $text-color-white;
+            transform: translateY(0);
+        }
+        &:hover .face.face-2 {
+            transform: translateY(0);
+        }
+    }
+    
+    .face {
+        transform: translate(0, -50%);
+        height: 300px;
+        width: 300px;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .face-1 {
+        position: relative;
+        background: #333;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        z-index: 3;
+        transform: translateY(150px);
+        transition: all 0.5s ease-in-out;
+        & .content {
+            opacity: 0.4;
+            transition: all 0.5s ease-in-out;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+    
+    .face-2 {
+        position: relative;
+        background: $text-color-white;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        transition: all 0.5s ease-in-out;
+        transform: translateY(-150px);
+        box-sizing: border-box;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+        & .content {
+            color: $backgroud-black;
+            text-align: center;
+            font-style: "Roboto";
+            font-weight: 600;
+        }
+    }
+    
+    ul {
+        width: 100%;
+        height: 70vh;
+        background: #ccc;
+        margin-top: 40px;
+        position: relative;
+        padding: 0;
+        &:hover li {
+            width: 10%;
+        }
+    }
+    
+    ul li {
+        list-style: none;
+        height: 100%;
+        width: 16.66666%;
+        border-right: 1px solid $black;
+        float: left;
+        position: relative;
+        box-sizing: border-box;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+        overflow: hidden;
+        &:nth-child(1) {
+            background-image: url(../Dhooli.jpg);
+            background-size: cover;
+            background-position: left;
+        }
+        &:nth-child(2) {
+            background-image: url(../Avijit.jpg);
+            background-size: cover;
+            background-position: left;
+        }
+        &:nth-child(3) {
+            background-image: url(../Ankur.jpg);
+            background-size: cover;
+            background-position: left;
+        }
+        &:nth-child(4) {
+            background-image: url(../Pranoy.jpg);
+            background-size: cover;
+            background-position: left;
+        }
+        &:nth-child(5) {
+            background-image: url(../Vishal.jpg);
+            background-size: cover;
+            background-position: left;
+        }
+        &:nth-child(6) {
+            background-image: url(../Neerav.jpg);
+            background-size: cover;
+            background-position: left;
+        }
+        &:hover {
+            width: 50%;
+            & .team-text {
+                bottom: 0;
+                transition: all .5s;
+            }
+        }
+        & .team-text {
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            box-sizing: border-box;
+            transition: all 0.5s ease-in;
+        }
+    }
